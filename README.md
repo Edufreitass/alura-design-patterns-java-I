@@ -27,22 +27,6 @@ O mais importante ao estudar padrões de projeto é entender qual a real motiva�
 
 As implementações são menos importantes, pois eles podem variar. O importante é resolver o problema de maneira elegante, usando a ideia por trás do padrão como um guia na implementação. Uma afirmação muito comum sobre padrões de projeto é que **você os aplica mil vezes, e as mil vezes você termina com uma implementação diferente do mesmo padrão.**
 
-## Strategy o tempo todo?
-
-Depende do contexto: flexibilidade é bom, mas agrega complexidade ao código.
-
-Depende do problema. Lembre-se que códigos simples são mais fáceis de manter sempre. Se você só tem uma estratégia, talvez faça mais sentido você não usar o Strategy, já que você estaria flexibilizando algo sem necessidade.
-
-Mas, se é nítido que novas estratégias aparecerão, com certeza um Strategy é mais limpo do que um conjunto de ifs, conforme discutimos nesse capítulo.
-
-Novamente, avalie o contexto e veja se o padrão de projeto vai trazer benefícios para aquele cenário.
-
-## Quando usar o Strategy?
-
-O padrão Strategy é muito útil quando temos um conjunto de algoritmos similares, e precisamos alternar entre eles em diferentes pedaços da aplicação. No exemplo do vídeo, temos diferentes maneiras de calcular o imposto, e precisamos alternar entre elas.
-
-O Strategy nos oferece uma maneira flexível para escrever diversos algoritmos diferentes, e de passar esses algoritmos para classes clientes que precisam deles. Esses clientes desconhecem qual é o algoritmo "real" que está sendo executado, e apenas mandam o algoritmo rodar. Isso faz com que o código da classe cliente fique bastante desacoplado das implementações concretas de algoritmos, possibilitando assim com que esse cliente consiga trabalhar com N diferentes algoritmos sem precisar alterar o seu código.
-
 ## Categorias dos padrões GoF
 
 Os padrões GoF foram divididos e categorizados de acordo com a natureza do problema que eles resolvem.
@@ -82,6 +66,28 @@ Os padrões GoF foram divididos e categorizados de acordo com a natureza do prob
 | Strategy | Comportamental |
 | Template Method | Comportamental |
 | Visitor | Comportamental |
+
+## Strategy o tempo todo?
+
+Depende do contexto: flexibilidade é bom, mas agrega complexidade ao código.
+
+Depende do problema. Lembre-se que códigos simples são mais fáceis de manter sempre. Se você só tem uma estratégia, talvez faça mais sentido você não usar o Strategy, já que você estaria flexibilizando algo sem necessidade.
+
+Mas, se é nítido que novas estratégias aparecerão, com certeza um Strategy é mais limpo do que um conjunto de ifs, conforme discutimos nesse capítulo.
+
+Novamente, avalie o contexto e veja se o padrão de projeto vai trazer benefícios para aquele cenário.
+
+## Quando usar o Strategy?
+
+O padrão Strategy é muito útil quando temos um conjunto de algoritmos similares, e precisamos alternar entre eles em diferentes pedaços da aplicação. No exemplo do vídeo, temos diferentes maneiras de calcular o imposto, e precisamos alternar entre elas.
+
+O Strategy nos oferece uma maneira flexível para escrever diversos algoritmos diferentes, e de passar esses algoritmos para classes clientes que precisam deles. Esses clientes desconhecem qual é o algoritmo "real" que está sendo executado, e apenas mandam o algoritmo rodar. Isso faz com que o código da classe cliente fique bastante desacoplado das implementações concretas de algoritmos, possibilitando assim com que esse cliente consiga trabalhar com N diferentes algoritmos sem precisar alterar o seu código.
+
+## Quando usar o Chain of Responsibility?
+
+O padrão Chain of Responsibility cai como uma luva quando temos uma lista de comandos a serem executados de acordo com algum cenário em específico, e sabemos também qual o próximo cenário que deve ser validado, caso o anterior não satisfaça a condição.
+
+Nesses casos, o Chain of Responsibility nos possibilita a separação de responsabilidades em classes pequenas e enxutas, e ainda provê uma maneira flexível e desacoplada de juntar esses comportamentos novamente.
 
 Fonte de algumas informações:
 [Alura](https://cursos.alura.com.br/formacao-expert-em-orientacao-a-objetos) | 
