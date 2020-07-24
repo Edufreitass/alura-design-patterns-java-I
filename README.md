@@ -74,7 +74,7 @@ Os padrões GoF foram divididos e categorizados de acordo com a natureza do prob
 | Chain of Responsibility | Comportamental |
 | Command | Comportamental |
 | Interpreter | Comportamental |
-| Iterator	Comportamental |
+| Iterator | Comportamental |
 | Mediator | Comportamental |
 | Memento | Comportamental |
 | Observer | Comportamental |
@@ -84,6 +84,5 @@ Os padrões GoF foram divididos e categorizados de acordo com a natureza do prob
 | Visitor | Comportamental |
 
 Fonte de algumas informações:
-
 [Alura](https://cursos.alura.com.br/formacao-expert-em-orientacao-a-objetos) | 
 [TreinaWeb](https://www.treinaweb.com.br/blog/padroes-de-projeto-o-que-sao-e-o-que-resolvem/)
