@@ -107,6 +107,10 @@ Quando temos diferentes algoritmos que possuem estruturas parecidas, o Template 
 
 Dessa forma, reutilizamos ao invés de repetirmos código, e facilitamos possíveis evoluções, tanto do algoritmo em sua estrutura macro, quanto dos detalhes do algoritmo, já que cada classe tem sua responsabilidade bem separada.
 
+## Quando usar o Decorator?
+
+Sempre que percebemos que temos comportamentos que podem ser compostos por comportamentos de outras classes envolvidas em uma mesma hierarquia, como foi o caso dos impostos, que podem ser composto por outros impostos. O Decorator introduz a flexibilidade na composição desses comportamentos, bastando escolher no momento da instanciação, quais instancias serão utilizadas para realizar o trabalho.
+
 Fonte de algumas informações:
 [Alura](https://cursos.alura.com.br/formacao-expert-em-orientacao-a-objetos) | 
 [TreinaWeb](https://www.treinaweb.com.br/blog/padroes-de-projeto-o-que-sao-e-o-que-resolvem/)
