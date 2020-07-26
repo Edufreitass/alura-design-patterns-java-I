@@ -1,8 +1,5 @@
 package br.com.alura.designpatterns.templatemethod;
 
-import br.com.alura.designpatterns.chainofresponsability.Imposto;
-import br.com.alura.designpatterns.chainofresponsability.Orcamento;
-
 public abstract class TemplateDeImpostoCondicional implements Imposto {
 
 	@Override

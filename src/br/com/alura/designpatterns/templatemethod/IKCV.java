@@ -1,8 +1,5 @@
 package br.com.alura.designpatterns.templatemethod;
 
-import br.com.alura.designpatterns.chainofresponsability.Item;
-import br.com.alura.designpatterns.chainofresponsability.Orcamento;
-
 public class IKCV extends TemplateDeImpostoCondicional {
 
 	private boolean temItemMaiorQue100ReisNo(Orcamento orcamento) {

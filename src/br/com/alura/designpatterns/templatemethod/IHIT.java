@@ -3,9 +3,6 @@ package br.com.alura.designpatterns.templatemethod;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.alura.designpatterns.chainofresponsability.Item;
-import br.com.alura.designpatterns.chainofresponsability.Orcamento;
-
 public class IHIT extends TemplateDeImpostoCondicional {
 
 	/*

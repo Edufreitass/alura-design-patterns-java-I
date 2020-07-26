@@ -1,7 +1,5 @@
 package br.com.alura.designpatterns.templatemethod;
 
-import br.com.alura.designpatterns.chainofresponsability.Orcamento;
-
 public class ICPP extends TemplateDeImpostoCondicional {
 
 	@Override
