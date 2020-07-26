@@ -115,6 +115,22 @@ Sempre que percebemos que temos comportamentos que podem ser compostos por compo
 
 A principal situação que faz emergir o Design Pattern State é a necessidade de implementação de uma máquina de estados. Geralmente, o controle das possíveis transições são vários e complexos, fazendo com que a implementação não seja simples. O State auxilia a manter o controle dos estados simples e organizados através da criação de classes que representem cada estado e saiba controlar as transições.
 
+## Quando usar o Builder?
+
+Sempre que tivermos um objeto complexo de ser criado, que possui diversos atributos, ou que possui uma lógica de criação complicada, podemos esconder tudo isso em um Builder.
+
+Além de centralizar o código de criação e facilitar a manutenção, ainda facilitamos a vida das classes que precisam criar essa classe complexa, afinal a interface do Builder tende a ser mais clara e fácil de ser usada.
+
+## Builders ou construtores?
+
+Por que não usar, ao invés do Builder, um conjunto de construtores nesse objeto, que fariam a mesma coisa que o Builder? Discuta vantagens e desvantagens de se usar diversos construtores ao invés do Builder.
+
+Um dos problemas da utilização de construtores é que, em casos onde diversos atributos sejam opcionais, precisaríamos ter uma combinação gigante de construtores (uma para cada possível combinação de atributos obrigatórios e opcionais), tornando o código difícil de manter. Além disso, como construir esse objeto é complicado, colocar essa regra no construtor do objeto, só faz com que ele tenha agora mais uma responsabilidade.
+
+Em outros casos, poderíamos ter diversos if's dentro do construtor. Quanto mais complexo for o processo de criação da classe, mais você deve pensar em isolá-lo em uma classe específica.
+
+O Builder possibilita a separação da complexidade da criação desse objeto em uma classe específica para isso, além de possibilitar a implementação de atributos opcionais mais facilmente.
+
 Fonte de algumas informações:
 [Alura](https://cursos.alura.com.br/formacao-expert-em-orientacao-a-objetos) | 
 [TreinaWeb](https://www.treinaweb.com.br/blog/padroes-de-projeto-o-que-sao-e-o-que-resolvem/)
